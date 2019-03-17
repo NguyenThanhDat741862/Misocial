@@ -31,7 +31,7 @@
 
     &__item {
         @include relative;
-        color: $color-white;
+        color: inherit;
         font-size: inherit;
         padding: 0 1.75rem 1rem 1.75rem;
 

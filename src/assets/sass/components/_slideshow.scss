@@ -26,27 +26,47 @@
         @include box(100%);
     }
 
-    &__prev {
-        @include absolute(top 46% left -8rem);
+    &__btn {
+        @include absolute(top 46%);
+        @include flex(row, center, center);
+    
         
-        @include screen(md) {
-            left: -6rem;
+
+        & > .circular {    
+            font-size: 2.75rem;
+            font-weight: 900;
+            text-align: center;
+            color: $color-white;
+            line-height: 2.5rem;
+
+            @include screen(xs) {
+                line-height: 2.45rem;
+            }
         }
 
-        @include portrait(xs) {
-            left: -1.5rem;
+        &--prev {
+            left: -8rem;
+            
+            @include screen(md) {
+                left: -6rem;
+            }
+    
+            @include portrait(xs) {
+                left: -1.5rem;
+            }
+        }
+    
+        &--next {
+            right: -8rem;
+    
+            @include screen(md) {
+                right: -6rem;
+            }
+    
+            @include portrait(xs) {
+                right: -1.5rem;
+            }
         }
     }
 
-    &__next {
-        @include absolute(top 46% right -8rem);
-
-        @include screen(md) {
-            right: -6rem;
-        }
-
-        @include portrait(xs) {
-            right: -1.5rem;
-        }
-    }
 }

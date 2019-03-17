@@ -91,4 +91,23 @@
             }
         }
     }
+
+    &--primary {
+        color: $color-white;
+        background-color: $color-primary;
+
+        &::after {
+            content: '';
+            background-color: transparent;
+        }
+
+        &:hover {
+            color: $color-grey-light;
+            background-color: transparent;
+
+            &::after {
+                background-color: $color-primary;
+            }
+        }
+    }
 }

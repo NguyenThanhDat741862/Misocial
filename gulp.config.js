@@ -18,7 +18,8 @@ const config = {
 
         order: [
             'vendor/jquery.min.js',
-            'vendor/**/*.js', 
+            'vendor/**/*.js',
+            '!main.js', 
             '*.js', 
             'main.js'
         ]

@@ -8,6 +8,15 @@
         width: 65%;
         height: 100%;
         background-color: $color-lightblue;
+        padding-right: 6rem;
+
+        @include screen(sm) {
+            padding-right: 4rem;
+        }
+
+        @include screen(xs) {
+            padding-right: 3rem;
+        }
     }
 
     &__img {

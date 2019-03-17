@@ -1,9 +1,10 @@
 .post {
     @include flex(row);
-    width: 40rem;
+    width: calc(50vw - 18rem - 12px);
     height: auto;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: 0 0 3rem rgba($color-black, .125);
     
     &:not(:last-child) {
         margin-right: 2rem;
@@ -12,13 +13,12 @@
     &__content {
         @include relative;
         @include box(100%);
-        padding: 3.25rem 2.5rem;
+        padding: 3.5rem 3.5rem 4.5rem 3.5rem;
         background-color: $color-white;
         transition: all .25s ease-in-out;
     }
 
     &__img {
-        background-color: red;
         width: 0;
         transition: all .25s ease-in-out;
 
@@ -31,6 +31,8 @@
         @include relative;
         @include flex(column);
         padding-bottom: 2.05rem;
+        white-space: nowrap;
+        overflow-x: hidden;
 
         &::after {
             @include absolute(left 0 bottom 0);
@@ -65,7 +67,7 @@
 
     &__icon {
         @include absolute(bottom 3.25rem right 2.5rem);
-        @include box(2.35rem);
+        @include box(2.75rem);
         
         & > .icon {
             display: inline-block;
@@ -81,5 +83,25 @@
         & > .post__img {
             width: 30%;
         }
+    }
+
+    @include screen(lg) {
+        width: calc(50vw - 14rem - 12px);
+    }
+
+    @include screen(md) {
+        width: calc(80vw - 24rem);
+    }
+
+    @include screen(sm) {
+
+    }
+
+    @include screen(xs) {
+        width: calc(80vw);
+    }
+
+    @include landscape(xs) {
+        width: calc(65vw);
     }
 }

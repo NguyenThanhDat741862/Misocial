@@ -14,7 +14,7 @@ body {
     font-weight: 500;
     letter-spacing: .35rem;
     text-shadow: .05rem .05rem .5rem rgba($color-black, .15);
-    color: $color-white;
+    color: inherit;
 
     @include screen(sm) {
         font-size: 2rem;

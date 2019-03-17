@@ -324,7 +324,7 @@
         padding-top: 5.5rem;
 
         & > .section__content {
-            margin-right: 0;
+            margin-right: 2.5rem;
             margin-left: 2rem;
         }
 
@@ -340,7 +340,7 @@
 
         & > .section__content {
             position: static;
-            width: 90%;
+            width: 85%;
             padding-right: 9rem;
 
             & > .circular {
@@ -424,17 +424,79 @@
         }
 
         & > .carousel {
-            width: max-content;
-            margin-left: -18rem;
-            
-            & > .carousel__content {
-                @include flex(row);
+            margin-top: 7rem;
 
+            & .owl-stage-outer {
+                overflow: visible;
+            }
+
+            & .owl-dots {
+                @include flex(row, center);
+                margin-top: 6.25rem;
             }
         }
     }
 
+    @include screen(lg) {
+        padding: 8rem 14rem 10rem 14rem;
+    }
 
+    @include screen(md) {
+        padding: 8rem 12rem 4rem 12rem;
+
+        & > .section__content {
+            & > .heading-secondary,
+            & > .paragraph {
+                width: 50%;
+            }
+
+            & > .carousel {
+                & .owl-dots {
+                    margin-top: 6rem;
+                }
+            }
+        }
+
+    }
+
+    @include screen(sm) {
+        padding: 6.5rem 10rem 3rem 10rem;
+
+    }
+
+    @include screen(xs) {
+        padding: 7rem 4rem 3rem 4rem;
+
+        & > .section__content {
+            & > .heading-secondary,
+            & > .paragraph {
+                width: 100%;
+            }
+
+            & > .btn-group {
+                position: static;
+                width: 100%;
+                margin-top: 2.5rem;
+            }
+
+            & > .carousel {
+                margin-top: 4rem;
+
+                & .owl-dots {
+                    margin-top: 5rem;
+                }
+            }
+        }
+    }
+
+    @include landscape(xs) {
+        & > .section__content {
+            & > .heading-secondary,
+            & > .paragraph {
+                width: 65%;
+            }
+        }
+    }
 }
 
 .cta {

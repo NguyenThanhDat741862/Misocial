@@ -1,4 +1,4 @@
-<nav class="topbar">
+<nav class="topbar" id="topbar">
     <input type="checkbox" class="topbar__checkbox"></input>
     <div class="topbar__icon">
         <div>&nbsp;</div>
@@ -23,8 +23,8 @@
     </div>
 </nav>
 
-<header class="header">
-    <div class="banner section">
+<header class="header" id="header">
+    <div class="banner section" id="banner">
         <div class="section__content">
             <h2 class="heading-secondary">
                 <div class="heading-secondary__title">
@@ -52,7 +52,7 @@
     </div>
 </header>
 
-<main class="main">
+<main class="main" id="main">
     <section class="choose-us section">
         <div class="section__img">
             <img src="img/choose-us.png" class="img"></img>
@@ -221,18 +221,19 @@
             </div>
     
             <div class="slideshow">
-                <div class="slideshow__prev">
-                    <div class="circular circular--small"></div>
+                <div class="slideshow__btn slideshow__btn--prev">
+                    <div class="circular circular--small circular--transparent">&lsaquo;</div>
                 </div>
                 <div class="slideshow__item">
                     <div class="slide">
                         <div class="slide__content">
+                            <img src="img/feature-chart.png" alt="" class="img">
                         </div>
                         <div class="slide__img"></div>
                     </div>
                 </div>
-                <div class="slideshow__next">
-                    <div class="circular circular--small"></div>
+                <div class="slideshow__btn slideshow__btn--next">
+                    <div class="circular circular--small circular--transparent">&rsaquo;</div>
                 </div>
             </div>
         </div>
@@ -252,7 +253,7 @@
 
             <div class="carousel">
                 <div class="carousel__content">
-                    <div class="owl-carousel owl-theme">
+                    <div class="owl-carousel owl-theme carousel-testimonial">
                         <div class="user">
                             <div class="user__quote">
                                 <i class="far fa-angle-double-left"></i>
@@ -501,33 +502,92 @@
         
             <div class="carousel">
                 <div class="carousel__content">
-                    <div class="post">
-                        <div class="post__img">
-                            <img src="img/article-img.png" alt="" class="img">
+                    <div class="owl-carousel owl-theme carousel-blog">
+                        <div class="post">
+                            <div class="post__img">
+                                <img src="img/article-img.png" alt="" class="img">
+                            </div>
+                            <div class="post__content">
+                                <div class="post__title">
+                                    <h3 class="heading-tertiary">
+                                        Data is all about the details
+                                    </h3>
+                                    <div class="small">on Mar 21, 2017 9:58 AM</div>
+                                </div>
+                                <div class="post__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</div>
+                                <div class="post__comment">
+                                    <span class="icon icon--comment"></span>
+                                    24 comments
+                                </div>
+                                <div class="post__icon">
+                                    <span class="icon icon--square"></span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="post__content">
-                            <div class="post__title">
-                                <h3 class="heading-tertiary">
-                                    Data is all about the details
-                                </h3>
-                                <div class="small">on Mar 21, 2017 9:58 AM</div>
+                        <div class="post">
+                            <div class="post__img">
+                                <img src="img/article-img.png" alt="" class="img">
                             </div>
-                            <div class="post__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</div>
-                            <div class="post__comment">
-                                <span class="icon icon--comment"></span>
-                                24 comments
+                            <div class="post__content">
+                                <div class="post__title">
+                                    <h3 class="heading-tertiary">
+                                        Data is all about the details
+                                    </h3>
+                                    <div class="small">on Mar 21, 2017 9:58 AM</div>
+                                </div>
+                                <div class="post__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</div>
+                                <div class="post__comment">
+                                    <span class="icon icon--comment"></span>
+                                    24 comments
+                                </div>
+                                <div class="post__icon">
+                                    <span class="icon icon--square"></span>
+                                </div>
                             </div>
-                            <div class="post__icon">
-                                <span class="icon icon--square"></span>
+                        </div>
+                        <div class="post">
+                            <div class="post__img">
+                                <img src="img/article-img.png" alt="" class="img">
+                            </div>
+                            <div class="post__content">
+                                <div class="post__title">
+                                    <h3 class="heading-tertiary">
+                                        Data is all about the details
+                                    </h3>
+                                    <div class="small">on Mar 21, 2017 9:58 AM</div>
+                                </div>
+                                <div class="post__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</div>
+                                <div class="post__comment">
+                                    <span class="icon icon--comment"></span>
+                                    24 comments
+                                </div>
+                                <div class="post__icon">
+                                    <span class="icon icon--square"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post__img">
+                                <img src="img/article-img.png" alt="" class="img">
+                            </div>
+                            <div class="post__content">
+                                <div class="post__title">
+                                    <h3 class="heading-tertiary">
+                                        Data is all about the details
+                                    </h3>
+                                    <div class="small">on Mar 21, 2017 9:58 AM</div>
+                                </div>
+                                <div class="post__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</div>
+                                <div class="post__comment">
+                                    <span class="icon icon--comment"></span>
+                                    24 comments
+                                </div>
+                                <div class="post__icon">
+                                    <span class="icon icon--square"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel__pagination">
-                    <span>&nbsp;</span>
-                    <span class="active">&nbsp;</span>
-                    <span>&nbsp;</span>
-                    <span>&nbsp;</span>
                 </div>
             </div>
         </div>
@@ -556,32 +616,36 @@
 
 </main>
 
-<footer class="footer">
-    <nav class="navbar">
-        <div class="navbar__logo">
-            <h1 class="heading-primary">
-                <span class="logo"></span>
-                MISOCIAL
-            </h1>
+<footer class="footer" id="footer">
+    <div class="bottombar">
+        <div class="bottombar__logo">
+            <div class="logo"></div>
+            <h1 class="heading-primary">MISOCIAL</h1>
         </div>
-        <div class="navbar__nav">
-            <ul class="navbar__list">
-                <li class="navbar__item">Home</li>
-                <li class="navbar__item">Why misocial</li>
-                <li class="navbar__item">Features</li>
-                <li class="navbar__item">Articles</li>
-                <li class="navbar__item">Pricing</li>
+
+        <div class="bottombar__nav">
+            <ul class="bottombar__navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Why <span class="uppercase">misocial</span></a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Pricing</a></li>
             </ul>
+            <div class="bottombar__btn">
+                <button class="btn btn--small btn--primary">Get started</button>
+            </div>
         </div>
-        <div class="navbar__get-started">Get started</div>
-    </nav>
+    </div>
 
     <div class="copyright">
         <div class="copyright__content">
             © 2017 Mass Impressions & Tranmautritam. Make the right impression.
         </div>
-        <div class="copyright__icon">
-
+        <div class="copyright__nav">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
 </footer>

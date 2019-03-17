@@ -1,0 +1,61 @@
+.bottombar {
+    @include flex(row, space-between);
+    width: 100%;
+    height: auto;
+    padding: 2.25rem;
+
+    &__logo {
+        @include flex(row, null, center);
+        @include fix-shake;
+    }
+
+    &__nav {
+        @include flex(row, null, baseline);     
+    }
+
+    &__navlist {
+        @include flex(row);
+        margin-right: 2rem;
+        
+        & > li {
+            color: inherit;
+            font-size: inherit;
+            font-weight: 500;
+            padding: 0 1.75rem 1rem 1.75rem;
+            transition: all .15 ease-in-out;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    @include screen(md) {
+        @include flex(column, null, center);
+        padding-top: 1.5rem;
+
+        &__logo {
+            margin-bottom: .75rem;
+        }
+
+        &__nav {
+            @include flex(column, null, center);
+            margin-top: 2rem;
+        }
+
+        &__navlist {
+            @include flex(row, center);
+            flex-wrap: wrap;    
+            margin-right: 0;
+
+            & > li {
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+        }
+
+        &__btn {
+            margin-top: 0;
+        }
+    }
+}
