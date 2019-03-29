@@ -22,16 +22,25 @@
         height: 26rem;
     }
 
-    &__item {
+    &__content {
         @include box(100%);
+        overflow: visible;
+
+        & > ul {
+            @include box(100%);
+            overflow: visible;
+
+            & > li {
+                @include box(100%);
+            }
+        }
     }
 
     &__btn {
         @include absolute(top 46%);
         @include flex(row, center, center);
+        z-index: 5;
     
-        
-
         & > .circular {    
             font-size: 2.75rem;
             font-weight: 900;

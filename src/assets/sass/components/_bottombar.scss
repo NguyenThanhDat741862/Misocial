@@ -5,8 +5,7 @@
     padding: 2.25rem;
 
     &__logo {
-        @include flex(row, null, center);
-        @include fix-shake;
+        @include flex(row, center, center);
     }
 
     &__nav {

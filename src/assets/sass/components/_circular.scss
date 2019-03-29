@@ -76,5 +76,9 @@
         &::after {
             background-color: transparent;
         }
+
+        @include screen(xs) {
+            background-color: $color-primary;
+        }
     }
 }

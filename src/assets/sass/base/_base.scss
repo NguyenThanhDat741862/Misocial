@@ -25,6 +25,14 @@ html {
     @include screen('xs') {
         font-size: 8px;     // 1rem = 8px
     }
+
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    &::-webkit-scrollbar-corner {
+        @include box(0);
+    }
 }
 
 body {

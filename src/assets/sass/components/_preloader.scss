@@ -1,0 +1,31 @@
+.preloader {
+    @include fixed(top 50% left 50%);
+    @include flex(column, center, center);
+    @include bg-img('../img/earth-bg.png', center, cover);
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+    z-index: 1000;
+    transition: all .8s ease-in-out;
+
+    &__icon {
+        @include box(10rem);
+        margin: 20px;
+        display:inline-block;
+    }
+
+    &__content {
+        color: $color-white;
+    }
+
+    &--fade {
+        opacity: 0;
+    }
+
+    &--hidden {
+        @include box(0);
+        visibility: hidden;
+    }
+}

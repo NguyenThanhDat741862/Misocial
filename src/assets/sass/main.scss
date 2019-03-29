@@ -19,10 +19,13 @@
 @import "vendor/owlcarousel/owl.theme.default.scss";
 @import "vendor/owlcarousel/owl.theme.green.scss";
 
+@import "vendor/cardslider/cardslider.scss";
+
+@import "components/preloader";
 @import "components/logo";
 @import "components/topbar";
 @import "components/section";
-@import "components/nav";
+@import "components/topnav";
 @import "components/btn";
 @import "components/circular";
 @import "components/feature";
@@ -37,6 +40,7 @@
 @import "components/post";
 @import "components/bottombar";
 @import "components/copyright";
+@import "components/progress";
 
 @import "layout/header";
 @import "layout/footer";

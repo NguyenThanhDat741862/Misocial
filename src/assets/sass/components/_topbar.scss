@@ -75,7 +75,7 @@
     }
 
     &__logo {
-        @include flex(row, null, center);
+        @include flex(row, center, center);
         @include fix-shake;
         z-index: 12;
     }
@@ -139,6 +139,6 @@
     &--bg::after {
         transform: translateY(0);
         z-index: -1;
-        box-shadow: 0 2px 1.5rem rgba($color-black, .35);
+        box-shadow: 0 2px 1.35rem rgba($color-black, .35);
     }
 }

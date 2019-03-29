@@ -12,4 +12,17 @@
     @include screen(xs) {
         @include box(3rem);
     }
+
+    &-wrap {
+        @include flex(row, flex-start, center);
+        width: 20rem;
+
+        @include screen(sm) {
+            width: 17.5rem;
+        }
+
+        @include screen(xs) {
+            width: 15rem;
+        }
+    }
 }

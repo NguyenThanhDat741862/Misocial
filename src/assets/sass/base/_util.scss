@@ -9,3 +9,20 @@
 .small {
     font-size: 1.2rem;
 }
+
+// Effect
+
+.typewriter {
+    width: 100%;
+    margin: 0 auto;
+    border-right: 2px solid rgba($color-white, .75);
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;  
+    animation: typewriter .5s steps(44) 1s 1 normal both,
+               blinkTextCursor .15s steps(44) infinite normal;
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+}

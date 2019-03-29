@@ -1,4 +1,4 @@
-.nav {
+.topnav {
     @include flex(row);
     margin-right: 10rem;
 
@@ -59,10 +59,9 @@
             font-size: 1.75rem;         
         }
 
-        &::before,
-        &::after {
+        &::before {
             content: "";
-            height: 0;
+            height: 2px;
             width: 0;
             background-color: $color-white;
             transition: .15s ease-in-out;
@@ -72,15 +71,9 @@
             @include absolute(left 0 bottom 0);
         }
 
-        &::after {
-            @include absolute(right 0 bottom 0);
-        }
-
         &:hover {
-            &::before,
-            &::after {
-                height: 2px;
-                width: calc(50%);
+            &::before {
+                width: 100%;
             }
         }
     }

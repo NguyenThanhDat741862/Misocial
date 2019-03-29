@@ -1,0 +1,32 @@
+/* The typing effect */
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 15rem;
+    }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: $color-grey-light;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* Spin effect */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to {
+        transform: rotate(359deg);
+    }
+}

@@ -48,7 +48,7 @@
     & > .section__content {
         width: 35%;
         z-index: 2;
-        transform: translateX(-5rem);
+        transform: translateX(-2rem);
     }
 
     & > .section__img {
@@ -152,7 +152,7 @@
         width: 100%;
     }
 
-    & > .circular {
+    & > a .circular {
         bottom: -8.5rem;
 
         @include screen(md) {
@@ -279,7 +279,7 @@
         @include relative;
         margin-left: 10rem;
 
-        & > .circular {
+        & > a .circular {
             left: 0;
             bottom: -13rem;
             transform: none;
@@ -296,7 +296,7 @@
         & > .section__content {
             margin-left: 8rem;
 
-            & > .circular {
+            & > a .circular {
                 bottom: -11rem;
             }
         }
@@ -310,7 +310,7 @@
             margin-left: 5rem;
             margin-right: 2.2rem;
 
-            & > .circular {
+            & > a .circular {
                 bottom: -3rem;
             }
         }
@@ -343,7 +343,7 @@
             width: 85%;
             padding-right: 9rem;
 
-            & > .circular {
+            & > a .circular {
                 bottom: 2rem;
                 left: 50%;
                 transform: translateX(-50%);
@@ -373,7 +373,7 @@
         width: 100%;
     }
 
-    & > .circular {
+    & > a .circular {
         bottom: 0;
         transform: translateX(-50%) translateY(50%);
         z-index: 1;
