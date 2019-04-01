@@ -3,13 +3,13 @@
     window.onload = () => {
         setTimeout(() => {
             $('#preloader').addClass('preloader--fade');
-        }, 150)
+        }, 150);
         setTimeout(() => {
             $('#preloader').addClass('preloader--hidden');
-        }, 950)
+        }, 1100);
         setTimeout(() => {
             $('#topbar, #header, #main, #footer').removeClass('hidden');
-        })
+        }, 1000);
     };
 
     window.onscroll = $.horizontalScrollProgress;
@@ -72,6 +72,14 @@
         effectTime: 700,
         threshold: 0
     }
+
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 10);
+    });
 
     $.addToTopBtn();
 

@@ -63,6 +63,12 @@ button {
     outline: none;
 }
 
+#topbar,
+#header,
+#main,
+#footer {
+    transition: all .25s ease;
+}
 
 .container {
     width: 100%;
