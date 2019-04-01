@@ -2,7 +2,7 @@
     @include flex(row, space-between);
     width: 100%;
     height: auto;
-    padding: 2.25rem;
+    padding: 2.25rem 0 2.25rem 0;
 
     &__logo {
         @include flex(row, center, center);

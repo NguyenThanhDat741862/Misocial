@@ -1,6 +1,6 @@
 (function($) {
 
-    let throttle = (cb, wait) => {
+    $.throttle = function (cb, wait) {
         let time = Date.now();
         return function() {
             if ((time + wait - Date.now()) < 0) {
@@ -18,24 +18,25 @@
     }
 
     $.addToTopBtn = function () {
+        return (function () {
+            let previousScroll = 0;
         
-
-        $(window).scroll(throttle(function () {    
-            let scroll = $(window).scrollTop();
-            let bannerHeight = $("#banner").height();
-
-            if (scroll >= bannerHeight) {
-                $this.addClass("visible");
-            } else {
-                $this.removeClass("visible");
-            }
-        }, 90));
+            $(window).scroll(function(){
+                let currentScroll = $(this).scrollTop();
+                if (currentScroll > previousScroll){
+                    $(".backtotop").addClass("backtotop--hidden");                    
+                } else {
+                    $(".backtotop").removeClass("backtotop--hidden");
+                }
+                previousScroll = currentScroll;
+            });
+        }());
     }
 
     $.fn.changeNavStyle = function () {
 		let	$this = $(this);
 
-        $(window).scroll(throttle(function () {    
+        $(window).scroll($.throttle(function () {    
             let scroll = $(window).scrollTop();
             let topbarHeight = $this.height() - 5;
 

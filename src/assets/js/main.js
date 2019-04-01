@@ -63,6 +63,23 @@
         loop: true
     }
 
+    config.lazy = {
+        effect: 'fadeIn',
+        effectTime: 800,
+        threshold: 0
+    }
+
+    config.lazyMemberSection = {
+        appendScroll: $('.member-wrap'),
+        effect: 'fadeIn',
+        effectTime: 800,
+        threshold: 0
+    }
+
+    $.addToTopBtn();
+
+    $('.lazy').lazy(config.lazy);
+    $('.member__img .lazy').lazy(config.lazyMemberSection);
 
     $('.carousel-testimonial').owlCarousel(config.carouselTestimonial);
     $('.carousel-blog').owlCarousel(config.carouselBlog);

@@ -3,7 +3,7 @@
 }
 
 .banner {
-    @include bg-img('../img/banner-bg.png', center, cover);
+    @include bg-img("../img/banner-bg.png", center, cover);
     height: 58.25vw;
     background-color: transparent;
 
@@ -270,7 +270,7 @@
 }
 
 .about {
-    @include bg-img("../img/about-bg.png", right);
+    @include bg-img("", right);
     @include flex(row, flex-start);
     padding-left: 0;
     padding-bottom: 10rem;
@@ -500,7 +500,7 @@
 }
 
 .cta {
-    @include bg-img('../img/earth-bg.png', center, cover);
+    @include bg-img("", center, cover);
     @include flex(column);
     padding-bottom: 0;
     padding-left: 0;

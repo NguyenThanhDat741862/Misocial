@@ -1,0 +1,45 @@
+.backtotop {
+    @include box(6.25rem);
+    @include fixed(bottom 5rem right 5rem);
+    @include flex(row, center, center);
+    transition: all .25s ease-in-out;
+    z-index: 500;
+
+    & > a {
+        @include box(100%);
+        @include flex(row, center, center);
+        border-radius: 100%;
+        background-color: $color-primary-dark;
+        font-size: 2.25rem;
+        color: $color-white;
+        box-shadow: 0 0 1.5rem rgba($color-black, .15);
+    }
+
+    @include screen(lg) {
+        @include box(6rem);
+        @include fixed(bottom 4.5rem right 4.5rem);
+    }
+
+    @include screen(md) {
+        @include box(5.2rem);
+        @include fixed(bottom 3.25rem right 3.25rem);
+    }
+
+    @include screen(sm) {
+        @include box(4.75rem);
+        @include fixed(bottom 2.75rem right 2.75rem);
+
+        & > a {
+            font-size: 1.75rem;
+        }
+    }
+
+    @include screen(xs) {
+        @include box(4.5rem);
+        @include fixed(bottom 2.5rem right 2.5rem);
+    }
+
+    &--hidden {
+        bottom: -10rem;
+    }
+}
