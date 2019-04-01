@@ -7,6 +7,9 @@
         setTimeout(() => {
             $('#preloader').addClass('preloader--hidden');
         }, 950)
+        setTimeout(() => {
+            $('#topbar, #header, #main, #footer').removeClass('hidden');
+        })
     };
 
     window.onscroll = $.horizontalScrollProgress;
@@ -63,22 +66,16 @@
         loop: true
     }
 
-    config.lazy = {
-        effect: 'fadeIn',
-        effectTime: 800,
-        threshold: 0
-    }
-
     config.lazyMemberSection = {
         appendScroll: $('.member-wrap'),
         effect: 'fadeIn',
-        effectTime: 800,
+        effectTime: 700,
         threshold: 0
     }
 
     $.addToTopBtn();
 
-    $('.lazy').lazy(config.lazy);
+    $('.lazy').lazy();
     $('.member__img .lazy').lazy(config.lazyMemberSection);
 
     $('.carousel-testimonial').owlCarousel(config.carouselTestimonial);
